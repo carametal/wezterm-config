@@ -5,7 +5,7 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 
-config.colors = { 
+config.colors = {
 --  foreground = '#5ece6d'
 }
 
@@ -76,6 +76,13 @@ config.keys = {
     mods = 'CMD|SHIFT',
     action = wezterm.action.AdjustPaneSize { 'Down', 5 }
   },
+  {
+    key = '¥',
+    mods = 'OPT',
+    action = wezterm.action.SendString("\\"),
+  }
 }
+
+config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 
 return config
