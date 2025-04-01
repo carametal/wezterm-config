@@ -9,7 +9,7 @@ config.colors = {
 --  foreground = '#5ece6d'
 }
 
-config.font = wezterm.font 'HackGen Console'
+config.font = wezterm.font 'HackGen Console NF'
 config.font_size = 17.0
 config.default_cursor_style = "BlinkingBlock"
 config.inactive_pane_hsb = {
